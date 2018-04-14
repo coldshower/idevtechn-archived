@@ -1,0 +1,289 @@
+/*SECTIONS*/
+/*------------------------------------------------------------------------
+
+	I. General Styling
+	II. Navbar
+	III. First Page Styling
+	IV. Home Page Styling
+	V. Work Pages Styling
+	VI. Clients Pages Styling
+	VII. FAQ Page Styling
+	IIX. Contact Page Styling
+	IX. Footer Styling
+	X. Media Queries
+
+--------------------------------------------------------------------------*/
+
+
+/* General Styling -------------------------- */
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: Raleway;
+	font-size: 18px;
+}
+body {
+	background: url(../images/square2x.png);
+}
+
+ul {
+	list-style: circle;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 2.25em;
+}
+
+a.section_anchors {
+	height: 40px;
+	display: block;
+}
+
+div.responsive_wrapper {
+	margin-left: 16%;
+	width: 80%;
+}
+
+hr {
+	border: 1px solid black;
+	width: 6%;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 3%;
+	margin-bottom: 4%;
+}
+
+p.section_heading {
+	margin-top: 2em;
+	font-size: 1.5em;
+	font-weight: 600;
+}
+span.highlights {
+	font-weight: 600;
+}
+
+
+/* Navbar ----------------------------------- */
+
+nav {
+	display: block;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	background-color: rgba(255,255,255,.95);
+	padding-top: 20px;
+	padding-bottom: 10px;
+	z-index: 999;
+	
+}
+nav ul {
+	display: inline;
+	list-style: none;
+	padding: 0;
+}
+nav ul li {
+	display: inline;
+	padding: 0 20px 0 20px;
+	
+}
+
+nav ul a, nav ul a:hover, nav ul a:visited, nav ul a:focus {
+	text-decoration: none;
+	color: black;
+}
+
+nav ul a:hover {
+
+}
+
+
+/* First Page Styling ------------------------ */
+
+div.first_page {
+	width: 100%;
+	height: auto;
+	margin-bottom: 30%;
+}
+
+div.first_page_wrapper {
+	margin-left: 55%;
+}
+
+div.first_page h1.heading {
+	margin-top: 45%;
+	font-weight: 200;
+	font-size: 3.5em;
+}
+
+/* Home Page Styling ------------------------ */
+
+div.home_page {
+	width: 100%;
+	height: auto;
+	margin-bottom:20%;
+}
+
+div.home_wrapper {
+	width: 70%;
+}
+
+
+
+/* Work Pages Styling ------------------------------ */
+
+div.work_page {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20%;
+}
+
+div.work_heading_wrapper {
+	width: 75%;
+}
+
+div.work_left_wrapper {
+	display: inline-block;
+	float: left;
+	width: 18%;
+
+}
+
+div.work_left_wrapper p.work_client {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-weight: 600;
+	font-size: 1.5em;
+	
+}
+
+a.slider_button img {
+	margin-top: 10%;
+	width: 20%;
+}
+
+div.work_right_wrapper {
+	display: inline-block;
+	/*float: left;*/
+	margin-left: 2%;
+	width: 75%
+}
+img.work_image {
+	width: 100%;
+	height: auto;
+}
+
+
+
+/* Contact Pages Styling --------------------------------- */
+
+div.contact_page {
+	width: 100%;
+	height: auto;
+	margin-bottom:20%; 
+}
+
+div.contact_wrapper {
+	width: 75%;
+}
+
+
+p.contact_heading {
+	font-weight: 600;
+}
+
+
+/* Q&A Pages Styling --------------------------------- */
+
+.qa_page {
+	width: 100%;
+	height: auto;
+}
+
+div.qa_wrapper {
+	width: 75%;
+}
+
+
+/* Footer Styling ---------------------------------*/
+
+div.footer {
+	margin-top: 10%;
+}
+div.footer_wrapper {
+	width: 75%;
+}
+
+/* Media Queries ------------------------------------*/
+
+@media (max-width: 1200px) {
+	html, body {
+		font-size: 18px;
+	}
+	div.work_left_wrapper, div.work_right_wrapper {
+		width: 90%;
+	}
+	a.slider_button img {
+		margin-top: 5%;
+		width: 10%;
+	}
+}
+
+@media (max-width: 800px) {
+	html, body {
+		font-size: 16px;
+	}
+
+	div.responsive_wrapper {
+		margin-left: 15%;
+	}
+
+	div.first_page h1.heading {
+		margin-top: 70%;
+	}
+	
+}
+
+@media (max-width: 600px) {
+	html, body {
+		font-size: 16px;
+	}
+	div.responsive_wrapper {
+		margin-left: 13%;
+		width: 85%;
+	}
+	div.home_wrapper, div.contact_wrapper, div.qa_wrapper, div.footer_wrapper {
+		width: 85%;
+	}
+	div.first_page h1.heading {
+		margin-top: 80%;
+	}
+
+}
+
+@media (max-width: 400px) {
+	html, body {
+		font-size: 14px;
+	}
+	div.responsive_wrapper {
+		margin-left: 7%;
+		width: 90%;
+	}
+	div.home_wrapper, div.contact_wrapper, div.qa_wrapper, div.footer_wrapper {
+		width: 90%;
+	}
+	div.first_page h1.heading {
+		margin-top: 250px;
+	}
+	nav ul li {
+		padding: 0 15px 0 15px;
+	}
+}
+
+
+@media (max-height: 400px) and (max-width: 800px) {
+	div.first_page h1.heading {
+		margin-top: 40%;
+	}
+}
